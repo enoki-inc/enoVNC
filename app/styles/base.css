@@ -885,9 +885,7 @@ html {
 
 .noVNC_logo {
   color:#Fa5751;
-  font-family: 'Orbitron', 'OrbitronTTF', sans-serif;
-  line-height:90%;
-  text-shadow: 0.1em 0.1em 0 black;
+  font-family: 'inter', sans-serif;
 }
 .noVNC_logo span{
   color:green;
