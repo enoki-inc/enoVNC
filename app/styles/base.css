@@ -37,11 +37,11 @@ body {
   margin:0;
   padding:0;
   /*Background image with light grey curve.*/
-  background-color:#494949;
-  background-repeat:no-repeat;
-  background-position:right bottom;
+  background-color:#202a32;
+  /*background-repeat:no-repeat;*/
+  /*background-position:right bottom;*/
   height:100%;
-  touch-action: none;
+  /*touch-action: none;*/
 }
 
 html {
