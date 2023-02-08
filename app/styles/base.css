@@ -237,7 +237,7 @@ html {
 
 #noVNC_control_bar {
   position: relative;
-  left: -100%;
+  right: -100%;
 
   transition: 0.5s ease-in-out;
 
@@ -250,7 +250,7 @@ html {
 }
 #noVNC_control_bar.noVNC_open {
   box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.5);
-  left: 0;
+  right: 0;
 }
 #noVNC_control_bar::before {
   /* This extra element is to get a proper shadow */
@@ -259,18 +259,18 @@ html {
   z-index: -1;
   height: 100%;
   width: 30px;
-  left: -30px;
+  right: -30px;
   transition: box-shadow 0.5s ease-in-out;
 }
 #noVNC_control_bar.noVNC_open::before {
   box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.5);
 }
 .noVNC_right #noVNC_control_bar {
-  left: 100%;
+  right: 100%;
   border-radius: 10px 0 0 10px;
 }
 .noVNC_right #noVNC_control_bar.noVNC_open {
-  left: 0;
+  right: 0;
 }
 .noVNC_right #noVNC_control_bar::before {
   visibility: hidden;
@@ -278,7 +278,7 @@ html {
 
 #noVNC_control_bar_handle {
   position: absolute;
-  left: -15px;
+  right: -15px;
   top: 0;
   transform: translateY(35px);
   width: calc(100% + 30px);
@@ -286,7 +286,7 @@ html {
   z-index: -1;
   cursor: pointer;
   border-radius: 5px;
-  background-color: rgb(83, 99, 122);
+  background-color: rgb(0, 0, 0);
   background-image: url("../images/handle_bg.svg");
   background-repeat: no-repeat;
   background-position: right;
@@ -298,7 +298,7 @@ html {
   background: url("../images/handle.svg");
   position: absolute;
   top: 22px; /* (50px-6px)/2 */
-  right: 5px;
+  left: 5px;
   width: 5px;
   height: 6px;
 }
@@ -309,11 +309,11 @@ html {
   display: none;
 }
 .noVNC_right #noVNC_control_bar_handle {
-  background-position: left;
+  background-position: right;
 }
 .noVNC_right #noVNC_control_bar_handle:after {
-  left: 5px;
-  right: 0;
+  right: 5px;
+  left: 0;
   transform: translateX(1px) rotate(180deg);
 }
 .noVNC_right #noVNC_control_bar.noVNC_open #noVNC_control_bar_handle:after {
@@ -322,7 +322,7 @@ html {
 /* Larger touch area for the handle, used when a touch screen is available */
 #noVNC_control_bar_handle div {
   position: absolute;
-  right: -35px;
+  left: -35px;
   top: 0;
   width: 50px;
   height: 100%;
@@ -334,8 +334,8 @@ html {
   }
 }
 .noVNC_right #noVNC_control_bar_handle div {
-  left: -35px;
-  right: auto;
+  right: -35px;
+  left: auto;
 }
 
 #noVNC_control_bar > .noVNC_scroll {
@@ -371,7 +371,7 @@ html {
   opacity: 0;
   transition: 0.2s ease-in-out;
   background: transparent;
-  box-shadow: 0 0 10px black, inset 0 0 10px 10px rgba(110, 132, 163, 0.8);
+  box-shadow: 0 0 10px black, inset 0 0 10px 10px rgb(0, 0, 0);
   border-radius: 10px;
   transition-delay: 0s;
 }
@@ -888,7 +888,7 @@ html {
   font-family: 'inter', sans-serif;
 }
 .noVNC_logo span{
-  color:green;
+  color:#FFFFFF;
 }
 
 #noVNC_bell {
