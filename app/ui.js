@@ -64,10 +64,10 @@ const UI = {
 
         // We rely on modern APIs which might not be available in an
         // insecure context
-        if (!window.isSecureContext) {
-            // FIXME: This gets hidden when connecting
-            UI.showStatus(_("Welcome to your Workspace. Testing Alternate message"), 'error');
-        }
+        // if (!window.isSecureContext) {
+        //     FIXME: This gets hidden when connecting
+        //     UI.showStatus(_("HTTPS"), 'error');
+        // }
 
         // Try to fetch version number
         fetch('./package.json')
@@ -164,7 +164,7 @@ const UI = {
         // set manually
         let port = window.location.port;
         if (!port) {
-            if (window.location.protocol.substring(0, 5) == 'https') {
+            if (window.location.protocol.substring(0, 5) == '') {
                 port = 443;
             } else if (window.location.protocol.substring(0, 4) == 'http') {
                 port = 80;
@@ -174,7 +174,7 @@ const UI = {
         /* Populate the controls if defaults are provided in the URL */
         UI.initSetting('host', window.location.hostname);
         UI.initSetting('port', port);
-        UI.initSetting('encrypt', (window.location.protocol === "https:"));
+        UI.initSetting('encrypt', (window.location.protocol === ":"));
         UI.initSetting('view_clip', false);
         UI.initSetting('resize', 'off');
         UI.initSetting('quality', 6);
