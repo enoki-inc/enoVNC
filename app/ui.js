@@ -92,11 +92,13 @@ const UI = {
             // Remove the address bar
             setTimeout(() => window.scrollTo(0, 1), 100);
         }
+        // Switch side of control bar
+        UI.toggleControlbarSide();
 
         // Restore control bar position
-        if (WebUtil.readSetting('controlbar_pos') === 'left') {
-            UI.toggleControlbarSide();
-        }
+        //if (WebUtil.readSetting('controlbar_pos') === 'left') {
+            //UI.toggleControlbarSide();
+        //}
 
         UI.initFullscreen();
 
