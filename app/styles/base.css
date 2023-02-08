@@ -293,7 +293,7 @@ html {
   cursor: pointer;
   border-radius: 5px;
   background-color: rgb(0, 0, 0);
-  /*background-image: url("../images/handle_bg.svg");*/
+  background-image: url("../images/handle_bg.svg");
   background-repeat: no-repeat;
   background-position: right;
   box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.5);

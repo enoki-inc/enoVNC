@@ -94,7 +94,7 @@ const UI = {
         }
 
         // Restore control bar position
-        if (WebUtil.readSetting('controlbar_pos') === 'right') {
+        if (WebUtil.readSetting('controlbar_pos') === 'left') {
             UI.toggleControlbarSide();
         }
 
