@@ -231,8 +231,8 @@ html {
   opacity: 0.8;
 }
 #noVNC_control_bar_anchor.noVNC_right {
-  left: auto;
-  right: 0;
+  right: auto;
+  left: 0;
 }
 
 #noVNC_control_bar {
@@ -357,8 +357,8 @@ html {
   left: auto;
 }
 #noVNC_control_bar_anchor.noVNC_right + #noVNC_hint_anchor {
-  left: -50px;
-  right: auto;
+  right: -50px;
+  left: auto;
 }
 #noVNC_control_bar_hint {
   position: relative;
