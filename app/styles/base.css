@@ -890,10 +890,10 @@ html {
 }
 
 .noVNC_logo {
-  color:white;
-  font-family: 'Brush Script MT', cursive;
+  color:#ffffff;
+  font-family: 'inter', sans-serif;
 }
-.noVNC_logo span{
+.noVNC_logo p{
   color:#FFFFFF;
 }
 
