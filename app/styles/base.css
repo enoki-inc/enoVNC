@@ -231,13 +231,13 @@ html {
   opacity: 0.8;
 }
 #noVNC_control_bar_anchor.noVNC_right {
-  right: auto;
-  left: 0;
+  left: auto;
+  right: 0;
 }
 
 #noVNC_control_bar {
   position: relative;
-  right: -100%;
+  left: -100%;
 
   transition: 0.5s ease-in-out;
 
@@ -251,7 +251,7 @@ html {
 #noVNC_control_bar.noVNC_open {
   box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.5);
   background-color: rgb(0, 0, 0);
-  right: 0;
+  left: 0;
 }
 #noVNC_control_bar::before {
   /* This extra element is to get a proper shadow */
@@ -260,7 +260,7 @@ html {
   z-index: -1;
   height: 100%;
   width: 30px;
-  right: -30px;
+  left: -30px;
   transition: box-shadow 0.5s ease-in-out;
   background-color: rgb(0, 0, 0);
 }
@@ -269,12 +269,12 @@ html {
   background-color: rgb(0, 0, 0);
 }
 .noVNC_right #noVNC_control_bar {
-  right: 100%;
+  left: 100%;
   border-radius: 10px 0 0 10px;
   background-color: rgb(0, 0, 0);
 }
 .noVNC_right #noVNC_control_bar.noVNC_open {
-  right: 0;
+  left: 0;
   background-color: rgb(0, 0, 0);
 }
 .noVNC_right #noVNC_control_bar::before {
@@ -284,7 +284,7 @@ html {
 
 #noVNC_control_bar_handle {
   position: absolute;
-  right: -15px;
+  left: -15px;
   top: 0;
   transform: translateY(35px);
   width: calc(100% + 30px);
@@ -318,8 +318,8 @@ html {
   background-position: right;
 }
 .noVNC_right #noVNC_control_bar_handle:after {
-  right: 5px;
-  left: 0;
+  left: 5px;
+  right: 0;
   transform: translateX(1px) rotate(180deg);
 }
 .noVNC_right #noVNC_control_bar.noVNC_open #noVNC_control_bar_handle:after {
@@ -328,7 +328,7 @@ html {
 /* Larger touch area for the handle, used when a touch screen is available */
 #noVNC_control_bar_handle div {
   position: absolute;
-  left: -35px;
+  right: -35px;
   top: 0;
   width: 50px;
   height: 100%;
@@ -340,8 +340,8 @@ html {
   }
 }
 .noVNC_right #noVNC_control_bar_handle div {
-  right: -35px;
-  left: auto;
+  left: -35px;
+  right: auto;
 }
 
 #noVNC_control_bar > .noVNC_scroll {
@@ -363,8 +363,8 @@ html {
   left: auto;
 }
 #noVNC_control_bar_anchor.noVNC_right + #noVNC_hint_anchor {
-  right: -50px;
-  left: auto;
+  left: -50px;
+  right: auto;
 }
 #noVNC_control_bar_hint {
   position: relative;
