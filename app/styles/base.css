@@ -250,6 +250,7 @@ html {
 }
 #noVNC_control_bar.noVNC_open {
   box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.5);
+  background-color: rgb(0, 0, 0);
   right: 0;
 }
 #noVNC_control_bar::before {
@@ -261,19 +262,24 @@ html {
   width: 30px;
   right: -30px;
   transition: box-shadow 0.5s ease-in-out;
+  background-color: rgb(0, 0, 0);
 }
 #noVNC_control_bar.noVNC_open::before {
   box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.5);
+  background-color: rgb(0, 0, 0);
 }
 .noVNC_right #noVNC_control_bar {
   right: 100%;
   border-radius: 10px 0 0 10px;
+  background-color: rgb(0, 0, 0);
 }
 .noVNC_right #noVNC_control_bar.noVNC_open {
   right: 0;
+  background-color: rgb(0, 0, 0);
 }
 .noVNC_right #noVNC_control_bar::before {
   visibility: hidden;
+  background-color: rgb(0, 0, 0);
 }
 
 #noVNC_control_bar_handle {
@@ -287,7 +293,7 @@ html {
   cursor: pointer;
   border-radius: 5px;
   background-color: rgb(0, 0, 0);
-  background-image: url("../images/handle_bg.svg");
+  /*background-image: url("../images/handle_bg.svg");*/
   background-repeat: no-repeat;
   background-position: right;
   box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.5);
@@ -391,7 +397,7 @@ html {
   vertical-align: middle;
   border:1px solid rgba(255, 255, 255, 0.2);
   border-radius: 6px;
-  background-color: transparent;
+  /*background-color: transparent;*/
   background-image: unset; /* we don't want the gradiant from input.css */
 }
 #noVNC_control_bar .noVNC_button.noVNC_selected {
