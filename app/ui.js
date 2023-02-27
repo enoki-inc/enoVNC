@@ -185,7 +185,7 @@ const UI = {
         UI.initSetting('path', 'websockify');
         UI.initSetting('repeaterID', '');
         UI.initSetting('reconnect', false);
-        UI.initSetting('reconnect_delay', 5000);
+        UI.initSetting('reconnect_delay', 600000);
 
         UI.setupSettingLabels();
     },
