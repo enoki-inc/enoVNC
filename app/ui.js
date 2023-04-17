@@ -164,7 +164,7 @@ const UI = {
         // set manually
         let port = window.location.port;
         if (!port) {
-            if (window.location.protocol.substring(0, 5) == '') {
+            if (window.location.protocol.substring(0, 5) == 'https') {
                 port = 443;
             } else if (window.location.protocol.substring(0, 4) == 'http') {
                 port = 80;
@@ -174,7 +174,7 @@ const UI = {
         /* Populate the controls if defaults are provided in the URL */
         UI.initSetting('host', window.location.hostname);
         UI.initSetting('port', port);
-        UI.initSetting('encrypt', (window.location.protocol === ":"));
+        UI.initSetting('encrypt', true);
         UI.initSetting('view_clip', false);
         UI.initSetting('resize', 'scale');
         UI.initSetting('quality', 6);
